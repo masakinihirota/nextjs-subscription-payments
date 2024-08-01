@@ -1,5 +1,5 @@
-import React, { InputHTMLAttributes, ChangeEvent } from 'react';
 import cn from 'classnames';
+import React, { InputHTMLAttributes, ChangeEvent } from 'react';
 
 import s from './Input.module.css';
 

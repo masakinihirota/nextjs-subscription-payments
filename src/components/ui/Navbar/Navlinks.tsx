@@ -1,11 +1,13 @@
 'use client';
 
 import Link from 'next/link';
-import { SignOut } from '@/utils/auth-helpers/server';
-import { handleRequest } from '@/utils/auth-helpers/client';
-import Logo from '@/components/icons/Logo';
 import { usePathname, useRouter } from 'next/navigation';
+
+import Logo from '@/components/icons/Logo';
+import { handleRequest } from '@/utils/auth-helpers/client';
+import { SignOut } from '@/utils/auth-helpers/server';
 import { getRedirectMethod } from '@/utils/auth-helpers/settings';
+
 import s from './Navbar.module.css';
 
 interface NavlinksProps {
