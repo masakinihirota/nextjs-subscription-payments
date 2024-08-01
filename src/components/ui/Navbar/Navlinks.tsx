@@ -1,21 +1,21 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
-import Logo from '@/components/icons/Logo';
-import { handleRequest } from '@/utils/auth-helpers/client';
-import { SignOut } from '@/utils/auth-helpers/server';
-import { getRedirectMethod } from '@/utils/auth-helpers/settings';
+import Logo from "@/components/icons/Logo";
+import { handleRequest } from "@/utils/auth-helpers/client";
+import { SignOut } from "@/utils/auth-helpers/server";
+import { getRedirectMethod } from "@/utils/auth-helpers/settings";
 
-import s from './Navbar.module.css';
+import s from "./Navbar.module.css";
 
 interface NavlinksProps {
   user?: any;
 }
 
 export default function Navlinks({ user }: NavlinksProps) {
-  const router = getRedirectMethod() === 'client' ? useRouter() : null;
+  const router = getRedirectMethod() === "client" ? useRouter() : null;
 
   return (
     <div className="relative flex flex-row justify-between py-4 align-center md:py-6">

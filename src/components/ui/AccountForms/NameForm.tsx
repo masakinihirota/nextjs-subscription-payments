@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { useRouter } from 'next/navigation';
-import { useState } from 'react';
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
-import Button from '@/components/ui/Button';
-import Card from '@/components/ui/Card';
-import { handleRequest } from '@/utils/auth-helpers/client';
-import { updateName } from '@/utils/auth-helpers/server';
+import Button from "@/components/ui/Button";
+import Card from "@/components/ui/Card";
+import { handleRequest } from "@/utils/auth-helpers/client";
+import { updateName } from "@/utils/auth-helpers/server";
 
 export default function NameForm({ userName }: { userName: string }) {
   const router = useRouter();
