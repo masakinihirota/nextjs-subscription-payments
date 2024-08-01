@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import { useRouter } from 'next/navigation';
-import { useState } from 'react';
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
-import Button from '@/components/ui/Button';
-import Card from '@/components/ui/Card';
-import { handleRequest } from '@/utils/auth-helpers/client';
-import { updateEmail } from '@/utils/auth-helpers/server';
+import Button from "@/components/ui/Button";
+import Card from "@/components/ui/Card";
+import { handleRequest } from "@/utils/auth-helpers/client";
+import { updateEmail } from "@/utils/auth-helpers/server";
 
 export default function EmailForm({
-  userEmail
+  userEmail,
 }: {
   userEmail: string | undefined;
 }) {
@@ -54,7 +54,7 @@ export default function EmailForm({
             type="text"
             name="newEmail"
             className="w-1/2 p-3 rounded-md bg-zinc-800"
-            defaultValue={userEmail ?? ''}
+            defaultValue={userEmail ?? ""}
             placeholder="Your email"
             maxLength={64}
           />

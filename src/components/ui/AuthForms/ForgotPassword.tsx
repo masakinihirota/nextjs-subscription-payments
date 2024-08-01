@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import { useState } from 'react';
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
-import Button from '@/components/ui/Button';
-import { handleRequest } from '@/utils/auth-helpers/client';
-import { requestPasswordUpdate } from '@/utils/auth-helpers/server';
+import Button from "@/components/ui/Button";
+import { handleRequest } from "@/utils/auth-helpers/client";
+import { requestPasswordUpdate } from "@/utils/auth-helpers/server";
 
 // Define prop type with allowEmail boolean
 interface ForgotPasswordProps {
@@ -18,9 +18,9 @@ interface ForgotPasswordProps {
 export default function ForgotPassword({
   allowEmail,
   redirectMethod,
-  disableButton
+  disableButton,
 }: ForgotPasswordProps) {
-  const router = redirectMethod === 'client' ? useRouter() : null;
+  const router = redirectMethod === "client" ? useRouter() : null;
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

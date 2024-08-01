@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import React from 'react';
-import { useState } from 'react';
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import React from "react";
+import { useState } from "react";
 
-import Button from '@/components/ui/Button';
-import { handleRequest } from '@/utils/auth-helpers/client';
-import { signUp } from '@/utils/auth-helpers/server';
+import Button from "@/components/ui/Button";
+import { handleRequest } from "@/utils/auth-helpers/client";
+import { signUp } from "@/utils/auth-helpers/server";
 
 // Define prop type with allowEmail boolean
 interface SignUpProps {
@@ -16,7 +16,7 @@ interface SignUpProps {
 }
 
 export default function SignUp({ allowEmail, redirectMethod }: SignUpProps) {
-  const router = redirectMethod === 'client' ? useRouter() : null;
+  const router = redirectMethod === "client" ? useRouter() : null;
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

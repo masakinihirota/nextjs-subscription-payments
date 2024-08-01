@@ -1,17 +1,17 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useRouter, usePathname } from 'next/navigation';
-import { useState } from 'react';
+import Link from "next/link";
+import { useRouter, usePathname } from "next/navigation";
+import { useState } from "react";
 
-import Button from '@/components/ui/Button';
-import Card from '@/components/ui/Card';
-import { Tables } from '@/types/types_db';
-import { createStripePortal } from '@/utils/stripe/server';
+import Button from "@/components/ui/Button";
+import Card from "@/components/ui/Card";
+import { Tables } from "@/types/types_db";
+import { createStripePortal } from "@/utils/stripe/server";
 
-type Subscription = Tables<'subscriptions'>;
-type Price = Tables<'prices'>;
-type Product = Tables<'products'>;
+type Subscription = Tables<"subscriptions">;
+type Price = Tables<"prices">;
+type Product = Tables<"products">;
 
 type SubscriptionWithPriceAndProduct = Subscription & {
   prices:
@@ -32,10 +32,10 @@ export default function CustomerPortalForm({ subscription }: Props) {
 
   const subscriptionPrice =
     subscription &&
-    new Intl.NumberFormat('en-US', {
-      style: 'currency',
+    new Intl.NumberFormat("en-US", {
+      style: "currency",
       currency: subscription?.prices?.currency!,
-      minimumFractionDigits: 0
+      minimumFractionDigits: 0,
     }).format((subscription?.prices?.unit_amount || 0) / 100);
 
   const handleStripePortalRequest = async () => {
@@ -51,7 +51,7 @@ export default function CustomerPortalForm({ subscription }: Props) {
       description={
         subscription
           ? `You are currently on the ${subscription?.prices?.products?.name} plan.`
-          : 'You are not currently subscribed to any plan.'
+          : "You are not currently subscribed to any plan."
       }
       footer={
         <div className="flex flex-col items-start justify-between sm:flex-row sm:items-center">

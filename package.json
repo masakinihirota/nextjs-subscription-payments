@@ -21,7 +21,8 @@
     "supabase:generate-migration": "npx supabase db diff | npx supabase migration new",
     "supabase:generate-seed": "npx supabase db dump --data-only -f supabase/seed.sql",
     "supabase:push": "npx supabase db push",
-    "supabase:pull": "npx supabase db pull"
+    "supabase:pull": "npx supabase db pull",
+    "prepare": "husky"
   },
   "dependencies": {
     "@radix-ui/react-toast": "^1.1.5",
@@ -57,6 +58,7 @@
     "eslint-plugin-storybook": "^0.8.0",
     "eslint-plugin-tailwindcss": "^3.17.3",
     "eslint-plugin-unused-imports": "^4.0.1",
+    "husky": "^9.1.4",
     "postcss": "^8.4.38",
     "prettier": "^3.3.1",
     "prettier-plugin-tailwindcss": "^0.5.14",
