@@ -44,10 +44,11 @@ export default function NameForm({ userName }: { userName: string }) {
     >
       <div className="mt-8 mb-4 text-xl font-semibold">
         <form id="nameForm" onSubmit={(e) => handleSubmit(e)}>
+          {/* 囲む枠に色を付ける */}
           <input
             type="text"
             name="fullName"
-            className="w-1/2 p-3 rounded-md bg-zinc-800"
+            className="w-1/2 p-3 border rounded-md border-zinc-700"
             defaultValue={userName}
             placeholder="Your name"
             maxLength={64}
