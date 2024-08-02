@@ -42,3 +42,5 @@ certificates
 .env*.local
 
 .vercel
+
+*storybook.log
