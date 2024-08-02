@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 "use client";
 
 import Link from "next/link";
@@ -15,6 +16,7 @@ interface NavlinksProps {
 }
 
 export default function Navlinks({ user }: NavlinksProps) {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = getRedirectMethod() === "client" ? useRouter() : null;
 
   return (

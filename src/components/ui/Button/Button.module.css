@@ -27,6 +27,9 @@
   @apply cursor-not-allowed;
   filter: grayscale(1);
   -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   -webkit-perspective: 1000;
+  perspective: 1000;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }

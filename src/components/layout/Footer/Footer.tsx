@@ -79,16 +79,6 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} ACME, Inc. All rights reserved.
           </span>
         </div>
-        <div className="flex items-center">
-          <span className="">Crafted by</span>
-          <a href="https://vercel.com" aria-label="Vercel.com Link">
-            <img
-              src="/vercel.svg"
-              alt="Vercel.com Logo"
-              className="inline-block h-6 ml-4 "
-            />
-          </a>
-        </div>
       </div>
     </footer>
   );
