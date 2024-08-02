@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 export default async function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="ja" suppressHydrationWarning>
-      <body className="bg-black">
+      <body className="">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />
           <main
