@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import { PropsWithChildren, Suspense } from "react";
 
-import Footer from "@/components/ui/Footer";
-import Navbar from "@/components/ui/Navbar";
+import Footer from '@/components/layout/Footer';
+import Navbar from '@/components/layout/Navbar';
 import { Toaster } from "@/components/ui/Toasts/toaster";
 import { getURL } from "@/utils/helpers";
 import "@/styles/main.css";
