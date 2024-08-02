@@ -1,24 +1,14 @@
-import Pricing from "@/components/ui/Pricing/Pricing";
-import {
-  getProducts,
-  getSubscription,
-  getUser,
-} from "@/utils/supabase/queries";
-import { createClient } from "@/utils/supabase/server";
+import Link from "next/link";
 
-export default async function PricingPage() {
-  const supabase = createClient();
-  const [user, products, subscription] = await Promise.all([
-    getUser(supabase),
-    getProducts(supabase),
-    getSubscription(supabase),
-  ]);
-
+export default function Page() {
   return (
-    <Pricing
-      user={user}
-      products={products ?? []}
-      subscription={subscription}
-    />
+    <>
+      <Link href="./ModeTogglePage">ButtonTestPage</Link>
+      <br />
+      TOP PAGE
+      <br />
+      {/* unauthへのリンクを作成 */}
+      <a href="/unauth">unauth</a>
+    </>
   );
 }

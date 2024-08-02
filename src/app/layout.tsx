@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { ThemeProvider } from "next-themes";
 import { PropsWithChildren, Suspense } from "react";
 
 import Footer from "@/components/ui/Footer";
@@ -22,19 +23,21 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({ children }: PropsWithChildren) {
   return (
-    <html lang="en">
-      <body className="bg-black">
-        <Navbar />
-        <main
-          id="skip"
-          className="min-h-[calc(100dvh-4rem)] md:min-h[calc(100dvh-5rem)]"
-        >
-          {children}
-        </main>
-        <Footer />
-        <Suspense>
-          <Toaster />
-        </Suspense>
+    <html lang="ja" suppressHydrationWarning>
+      <body className="">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Navbar />
+          <main
+            id="skip"
+            className="min-h-[calc(100dvh-4rem)] md:min-h[calc(100dvh-5rem)]"
+          >
+            {children}
+          </main>
+          <Footer />
+          <Suspense>
+            <Toaster />
+          </Suspense>
+        </ThemeProvider>
       </body>
     </html>
   );
