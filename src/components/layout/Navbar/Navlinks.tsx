@@ -4,12 +4,12 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 
-import ModeToggle from '@/components/darkmode/ModeToggle/page';
-import { handleRequest } from '@/utils/auth-helpers/client';
-import { SignOut } from '@/utils/auth-helpers/server';
-import { getRedirectMethod } from '@/utils/auth-helpers/settings';
+import ModeToggle from "@/components/darkmode/ModeToggle/page";
+import { handleRequest } from "@/utils/auth-helpers/client";
+import { SignOut } from "@/utils/auth-helpers/server";
+import { getRedirectMethod } from "@/utils/auth-helpers/settings";
 
-import s from './Navbar.module.css';
+import s from "./Navbar.module.css";
 
 interface NavlinksProps {
   user?: any;
@@ -17,7 +17,7 @@ interface NavlinksProps {
 
 export default function Navlinks({ user }: NavlinksProps) {
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const router = getRedirectMethod() === 'client' ? useRouter() : null;
+  const router = getRedirectMethod() === "client" ? useRouter() : null;
 
   return (
     <div className="relative flex flex-row justify-between py-4 align-center md:py-6">
