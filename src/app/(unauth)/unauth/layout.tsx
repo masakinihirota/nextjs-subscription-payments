@@ -1,9 +1,9 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div style={{ display: 'flex', border: '1px solid #ccc', padding: '20px' }}>
-      <nav style={{ width: '200px', marginRight: '20px' }}>
+    <div style={{ display: "flex", border: "1px solid #ccc", padding: "20px" }}>
+      <nav style={{ width: "200px", marginRight: "20px" }}>
         <h3>Menu</h3>
         <ul>
           <li>
