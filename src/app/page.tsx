@@ -1,3 +1,5 @@
+import PricingPage from './pricing-page';
+
 // TOP PAGE 静的ページ
 export default function Page() {
   return (
@@ -8,6 +10,8 @@ export default function Page() {
       {/* unauthへのリンクを作成 */}
       {/* これはメイン画面に移動する用*/}
       <a href="/unauth">unauth</a>
+      <br />
+      <PricingPage />
     </>
   );
 }
