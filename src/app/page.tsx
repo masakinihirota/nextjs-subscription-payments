@@ -1,6 +1,7 @@
-import PricingPage from "./pricing-page";
-
 // TOP PAGE 静的ページ
+
+import { Button } from './button/Button';
+
 export default function Page() {
   return (
     <>
@@ -11,7 +12,9 @@ export default function Page() {
       {/* これはメイン画面に移動する用*/}
       <a href="/unauth">unauth</a>
       <br />
-      <PricingPage />
+      <Button label="Storybook Test Button" />
+      <br />
+      {/* <PricingPage /> */}
     </>
   );
 }
