@@ -47,7 +47,7 @@ export default function ForgotPassword({
               autoCapitalize="none"
               autoComplete="email"
               autoCorrect="off"
-              className="w-full p-3 rounded-md bg-zinc-800"
+              className="w-full p-3 rounded-md "
             />
           </div>
           <Button
@@ -62,19 +62,19 @@ export default function ForgotPassword({
         </div>
       </form>
       <p>
-        <Link href="/signin/password_signin" className="font-light text-sm">
+        <Link href="/signin/password_signin" className="text-sm font-light">
           Sign in with email and password
         </Link>
       </p>
       {allowEmail && (
         <p>
-          <Link href="/signin/email_signin" className="font-light text-sm">
+          <Link href="/signin/email_signin" className="text-sm font-light">
             Sign in via magic link
           </Link>
         </p>
       )}
       <p>
-        <Link href="/signin/signup" className="font-light text-sm">
+        <Link href="/signin/signup" className="text-sm font-light">
           Don't have an account? Sign up
         </Link>
       </p>

@@ -48,7 +48,7 @@ export default function NameForm({ userName }: { userName: string }) {
           <input
             type="text"
             name="fullName"
-            className="w-1/2 p-3 border rounded-md border-zinc-700"
+            className="w-1/2 p-3 border rounded-md "
             defaultValue={userName}
             placeholder="Your name"
             maxLength={64}

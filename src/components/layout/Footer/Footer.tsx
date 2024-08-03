@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 import GitHub from "@/components/icons/GitHub";
-import Logo from "@/components/icons/Logo";
 
 export default function Footer() {
   return (
@@ -12,10 +11,7 @@ export default function Footer() {
             href="/"
             className="flex items-center flex-initial font-bold md:mr-24"
           >
-            <span className="mr-2 border rounded-full ">
-              <Logo />
-            </span>
-            <span>ACME</span>
+            <span className="mr-2 border rounded-full ">VNS.BLUE</span>
           </Link>
         </div>
         <div className="col-span-1 lg:col-span-2">
@@ -66,7 +62,7 @@ export default function Footer() {
           <div className="flex items-center h-10 space-x-6">
             <a
               aria-label="Github Repository"
-              href="https://github.com/vercel/nextjs-subscription-payments"
+              href="https://github.com/masakinihirota/vns-masakinihirota"
             >
               <GitHub />
             </a>
@@ -78,16 +74,6 @@ export default function Footer() {
           <span>
             &copy; {new Date().getFullYear()} ACME, Inc. All rights reserved.
           </span>
-        </div>
-        <div className="flex items-center">
-          <span className="">Crafted by</span>
-          <a href="https://vercel.com" aria-label="Vercel.com Link">
-            <img
-              src="/vercel.svg"
-              alt="Vercel.com Logo"
-              className="inline-block h-6 ml-4 "
-            />
-          </a>
         </div>
       </div>
     </footer>
