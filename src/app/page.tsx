@@ -1,4 +1,4 @@
-import PricingPage from './pricing-page';
+import PricingPage from "./pricing-page";
 
 // TOP PAGE 静的ページ
 export default function Page() {
