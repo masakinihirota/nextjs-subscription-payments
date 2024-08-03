@@ -52,9 +52,15 @@ Supabase プロジェクト内で、
 
 **[省略可] Supabase 環境変数を設定する (デプロイボタン経由でインストールした場合不要)**
 
-「Vercelにデプロイ」ボタンを使用してこのテンプレートをデプロイした場合、この手順はスキップできます。Supabase Vercel インテグレーションは環境変数を自動的に設定します。Vercel プロジェクトの設定に移動し、「環境変数」をクリックすると、Supabase アイコンが隣にある環境変数のリストが表示されます。
+「Vercelにデプロイ」ボタンを使用してこのテンプレートをデプロイした場合、この手順はスキップできます。
 
-そうでない場合は、[API 設定](https://app.supabase.com/project/_/settings/api) に移動し、それらを Vercel デプロイメントインターフェイスに貼り付けます。プロジェクト API キーをコピーして `NEXT_PUBLIC_SUPABASE_ANON_KEY` と `SUPABASE_SERVICE_ROLE_KEY` フィールドに貼り付け、プロジェクト URL をコピーして `NEXT_PUBLIC_SUPABASE_URL` として Vercel に貼り付けます。
+Vercelの
+
+Supabase Vercel インテグレーションは環境変数を自動的に設定します。Vercel プロジェクトの設定に移動し、「環境変数」をクリックすると、Supabase アイコンが隣にある環境変数のリストが表示されます。
+
+そうでない場合は、[API 設定](https://app.supabase.com/project/_/settings/api) に移動し、それらを Vercel デプロイメントインターフェイスに貼り付けます。
+
+プロジェクト API キーをコピーして `NEXT_PUBLIC_SUPABASE_ANON_KEY` と `SUPABASE_SERVICE_ROLE_KEY` フィールドに貼り付け、プロジェクト URL をコピーして `NEXT_PUBLIC_SUPABASE_URL` として Vercel に貼り付けます。
 
 これで Supabase 設定が完了です! もうすぐです。
 
