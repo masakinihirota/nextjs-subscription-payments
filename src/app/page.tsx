@@ -1,6 +1,6 @@
 // TOP PAGE 静的ページ
 
-import { Button } from './button/Button';
+import { Button } from "./button/Button";
 
 export default function Page() {
   return (

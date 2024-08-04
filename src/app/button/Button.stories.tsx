@@ -1,13 +1,13 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { Button } from './Button';
+import type { Meta, StoryObj } from "@storybook/react";
+import { Button } from "./Button";
 
 const meta = {
-  title: 'TailwindCSS/Button',
+  title: "TailwindCSS/Button",
   component: Button,
   parameters: {
-    layout: 'centered'
+    layout: "centered",
   },
-  tags: ['autodocs']
+  tags: ["autodocs"],
 } satisfies Meta<typeof Button>;
 
 export default meta;
@@ -15,6 +15,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    label: 'Button TailwindCSS'
-  }
+    label: "Button TailwindCSS",
+  },
 };
