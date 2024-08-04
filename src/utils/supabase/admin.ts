@@ -44,7 +44,7 @@ const upsertPriceRecord = async (
 ) => {
   const priceData: Price = {
     id: price.id,
-    product_id: typeof price.product === 'string' ? price.product : '',
+    product_id: typeof price.product === "string" ? price.product : "",
     active: price.active,
     currency: price.currency,
     type: price.type,
@@ -53,7 +53,7 @@ const upsertPriceRecord = async (
     interval_count: price.recurring?.interval_count ?? null,
     trial_period_days: price.recurring?.trial_period_days ?? TRIAL_PERIOD_DAYS,
     description: null,
-    metadata: null
+    metadata: null,
   };
 
   const { error: upsertError } = await supabaseAdmin
