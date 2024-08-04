@@ -29,7 +29,11 @@
 
 [Vercel デプロイボタン](https://vercel.com/button) (新しいタブで開きます)
 
-Vercel デプロイは、このテンプレートを使って GitHub アカウントに新しいリポジトリを作成し、新しい Supabase プロジェクトの作成をガイドします。 [Supabase Vercel デプロイ統合](https://vercel.com/integrations/supabase) は必要な Supabase 環境変数を設定し、SQL マイグレーション ([./supabase/migrations/20230530034630_init.sql)](./supabase/migrations/20230530034630_init.sql) を実行してアカウントのデータベース スキーマを設定します。 作成されたテーブルはプロジェクトの [テーブルエディタ](https://app.supabase.com/project/_/editor) で確認できます。
+Vercel デプロイは、このテンプレートを使って GitHub アカウントに新しいリポジトリを作成し、新しい Supabase プロジェクトの作成をガイドします。
+
+[Supabase Vercel デプロイ統合](https://vercel.com/integrations/supabase) は必要な Supabase 環境変数を設定し、SQL マイグレーション ([./supabase/migrations/20230530034630_init.sql)](./supabase/migrations/20230530034630_init.sql) を実行してアカウントのデータベース スキーマを設定します。
+
+作成されたテーブルはプロジェクトの [テーブルエディタ](https://app.supabase.com/project/_/editor) で確認できます。
 
 自動設定が失敗した場合、[Supabase アカウントを作成](https://app.supabase.com/projects) し、必要に応じて新しいプロジェクトを作成してください。 プロジェクト内にある [SQL エディター](https://app.supabase.com/project/_/sql) に移動し、"Stripe サブスクリプション" スターター テンプレートをクイックスタートセクションから選択してください。
 
@@ -42,11 +46,15 @@ Supabase プロジェクト内で、
 (例: https://your-deployment-url.vercel.app)
 をサイトURLとして設定します。
 
+https://vns-masakinihirota.vercel.app
+NEXT_PUBLIC_SITE_URL
 次に、Vercel デプロイ設定で、新しい **本番** 環境変数を作成し、名前を `NEXT_PUBLIC_SITE_URL` にし、そこに同じ URL を設定してください。 プレビューブランチとローカル開発が正しく動作するように、プレビューと開発環境の選択を解除してください。
 
 **[省略可] デプロイプレビュー用のリダイレクトワイルドカードを設定する (デプロイボタン経由でインストールした場合不要)**
 
-「Vercelにデプロイ」ボタンを使用してこのテンプレートをデプロイした場合、この手順はスキップできます。Supabase Vercel インテグレーションはリダイレクトワイルドカードを自動的に設定します。Supabase の [認証設定](https://app.supabase.com/project/_/auth/url-configuration) にアクセスして確認すると、「リダイレクト URL」の下にリダイレクトの一覧が表示されます。
+「Vercelにデプロイ」ボタンを使用してこのテンプレートをデプロイした場合、この手順はスキップできます。
+
+Supabase Vercel インテグレーションはリダイレクトワイルドカードを自動的に設定します。Supabase の [認証設定](https://app.supabase.com/project/_/auth/url-configuration) にアクセスして確認すると、「リダイレクト URL」の下にリダイレクトの一覧が表示されます。
 
 そうでない場合は、認証リダイレクト (メール確認、マジックリンク、OAuth プロバイダー) がデプロイプレビューで正しく機能するように、[認証設定](https://app.supabase.com/project/_/auth/url-configuration) に移動し、次のワイルドカード URL を「リダイレクト URL」に追加します: `https://*-username.vercel.app/**` リダイレクトワイルドカードパターンの詳細については、[ドキュメント](https://supabase.com/docs/guides/auth#redirect-urls-and-wildcards) を参照してください。
 
