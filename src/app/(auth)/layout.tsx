@@ -1,8 +1,4 @@
-// 各役割ごとに ルートレイアウトを作成したので、このファイルは後で消す。
-// ルーティング: ルート グループ | Next.js
-// https://nextjs.org/docs/app/building-your-application/routing/route-groups
-// 複数のルートレイアウトを作成する
-// 最上位のlayout.jsファイルを削除し、layout.js各ルート グループ内にファイルを追加します。
+// (auth)のルートレイアウト
 
 import { Metadata } from 'next';
 import { ThemeProvider } from 'next-themes';

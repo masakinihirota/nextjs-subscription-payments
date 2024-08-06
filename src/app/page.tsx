@@ -1,6 +1,7 @@
 // TOP PAGE 静的ページ
+import Link from 'next/link';
 
-import { Button } from "./button/Button";
+import { Button } from './button/Button';
 
 export default function Page() {
   return (
@@ -13,7 +14,8 @@ export default function Page() {
       <a href="/unauth">unauth</a>
       <br />
       <Button label="Storybook Test Button" />
-      <br />
+      <br /> {/* userTestページへのリンク */}
+      <Link href="/userTest">userTest</Link>
       {/* <PricingPage /> */}
     </>
   );
