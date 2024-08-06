@@ -1,7 +1,7 @@
 // TOP PAGE 静的ページ
-import Link from 'next/link';
+import Link from "next/link";
 
-import { Button } from './button/Button';
+import { Button } from "./button/Button";
 
 export default function Page() {
   return (

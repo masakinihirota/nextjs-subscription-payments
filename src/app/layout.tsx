@@ -4,18 +4,18 @@
 // 複数のルートレイアウトを作成する
 // 最上位のlayout.jsファイルを削除し、layout.js各ルート グループ内にファイルを追加します。
 
-import { Metadata } from 'next';
-import { ThemeProvider } from 'next-themes';
-import { PropsWithChildren, Suspense } from 'react';
+import { Metadata } from "next";
+import { ThemeProvider } from "next-themes";
+import { PropsWithChildren, Suspense } from "react";
 
-import Footer from '@/components/layout/Footer';
-import Navbar from '@/components/layout/Navbar';
-import { Toaster } from '@/components/ui/Toasts/toaster';
-import { getURL } from '@/utils/helpers';
-import '@/styles/main.css';
+import Footer from "@/components/layout/Footer";
+import Navbar from "@/components/layout/Navbar";
+import { Toaster } from "@/components/ui/Toasts/toaster";
+import { getURL } from "@/utils/helpers";
+import "@/styles/main.css";
 
-const title = 'Next.js Subscription Starter';
-const description = 'Brought to you by Vercel, Stripe, and Supabase.';
+const title = "Next.js Subscription Starter";
+const description = "Brought to you by Vercel, Stripe, and Supabase.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(getURL()),
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   description: description,
   openGraph: {
     title: title,
-    description: description
-  }
+    description: description,
+  },
 };
 
 export default async function RootLayout({ children }: PropsWithChildren) {
