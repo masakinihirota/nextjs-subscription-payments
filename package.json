@@ -4,6 +4,7 @@
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
+    "test": "vitest",
     "lint": "eslint --ext .ts,.js,.tsx,.jsx src",
     "lint:debug": "eslint --ext .ts,.js,.tsx,.jsx src --debug",
     "lint:fix": "eslint --ext .ts,.js,.tsx,.jsx src --fix",
@@ -57,11 +58,13 @@
     "@storybook/nextjs": "^8.2.7",
     "@storybook/react": "^8.2.7",
     "@storybook/test": "^8.2.7",
+    "@testing-library/react": "^16.0.0",
     "@types/node": "^20.14.2",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
+    "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.19",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.1.0",
@@ -73,11 +76,13 @@
     "eslint-plugin-tailwindcss": "^3.17.3",
     "eslint-plugin-unused-imports": "^4.0.1",
     "husky": "^9.1.4",
+    "jsdom": "^24.1.1",
     "postcss": "^8.4.38",
     "prettier": "^3.3.1",
     "prettier-plugin-tailwindcss": "^0.5.14",
     "storybook": "^8.2.7",
     "supabase": "^1.172.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "vitest": "^2.0.5"
   }
 }
