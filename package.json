@@ -5,6 +5,8 @@
     "build": "next build",
     "start": "next start",
     "test": "vitest",
+    "test:ui": "vitest --ui",
+    "coverage": "vitest run --coverage",
     "lint": "eslint --ext .ts,.js,.tsx,.jsx src",
     "lint:debug": "eslint --ext .ts,.js,.tsx,.jsx src --debug",
     "lint:fix": "eslint --ext .ts,.js,.tsx,.jsx src --fix",
@@ -46,7 +48,8 @@
     "stripe": "^14.25.0",
     "tailwind-merge": "^2.3.0",
     "tailwindcss": "^3.4.4",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "1.6.1",
